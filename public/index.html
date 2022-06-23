@@ -1,0 +1,49 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FETCHGEN</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+</head>
+
+<body>
+    <div id="menu">
+        <a href="register.html">
+            <button type="button" id="menu-btn">Register</button>
+        </a>
+        <a href="login.html">
+            <button type="button" id="menu-btn">Login</button>
+        </a>
+    </div>
+
+    <h1>FETCHGEN</h1>
+
+    <div class="fetchCreator">
+        <label for="reqType">Method:</label>
+        <select name="reqType" id="reqType">
+            <option value="get">GET</option>
+            <option value="post">POST</option>
+            <option value="put">PUT</option>
+            <option value="delete">DELETE</option>
+        </select><br>
+        <label for="reqUrl">URL:</label>
+        <input type="text" name="reqUrl" id="reqUrl">
+        <label for="reqHeaders">Headers:</label>
+        <textarea rows="5" name="reqHeaders" id="reqHeaders"></textarea>
+        <label for="reqBody">Request Body:</label>
+        <textarea rows="10" name="reqBody" id="reqBody"></textarea>
+        <button type="submit" id="submit-btn" onclick="submitRequest()">Submit</button>
+        <br><br>
+        <div id="fetchTemplate" hidden>
+            <label for="template">Fetch Generated:</label>
+        </div>
+
+    </div>
+</body>
+
+</html>

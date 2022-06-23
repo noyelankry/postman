@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+* {
+    font-family: 'Quicksand';
+    background-color: darkslategrey;
+    color: white;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+h1 {
+    font-size: 2.3rem;
+    padding: 0;
+    margin: 0;
+}
+
+input {
+    display: block;
+    background-color: white;
+    margin: 5px auto;
+    border: 0;
+    border-radius: 15px;
+    color: black;
+    width: 30%;
+
+}
+
+button {
+    display: block;
+    background-color: white;
+    margin: 25px auto;
+    border: 0;
+    border-radius: 10px;
+    color: darkslategray;
+    margin-left: 10px;
+}
+
+#submit-btn,
+#login-btn,
+#register-btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+a {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: large;
+    margin: 0;
+    padding: 0;
+}
+
+select {
+    background-color: white;
+    margin: 25px auto;
+    border: 0;
+    border-radius: 10px;
+    color: darkslategray
+}
+
+textarea {
+    display: block;
+    font-size: large;
+    text-align: left;
+    width: 30%;
+    background-color: white;
+    margin: 25px auto;
+    border: 0;
+    border-radius: 10px;
+    color: darkslategray
+}
+
+#menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+#menu>a>button {
+    margin-top: 5px;
+}
